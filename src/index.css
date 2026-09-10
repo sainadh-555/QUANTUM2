@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #050711;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070a18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2fe;
+}
+
+/* Quantum Circuit Wire Line Styles */
+.qubit-wire-line {
+  background: linear-gradient(90deg, rgba(0,242,254,0.15) 0%, rgba(0,242,254,0.4) 50%, rgba(0,242,254,0.15) 100%);
+  box-shadow: 0 0 8px rgba(0, 242, 254, 0.2);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(12, 16, 36, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(19, 27, 59, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon glow helper classes */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+}
+
+.glow-purple {
+  box-shadow: 0 0 15px rgba(127, 0, 255, 0.4);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
+}
+
+/* Circuit Gate Hover Effect */
+.gate-card {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gate-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.25);
+}
